@@ -8,6 +8,9 @@ const camera = new THREE.PerspectiveCamera(
     2000
 );
 
+const textureLoader = new THREE.TextureLoader();
+const starTexture = textureLoader.load('./sun.jpg');
+
 const camStart = new THREE.Vector3(-10,12,16);
 const camEnd = new THREE.Vector3(10, 3, 10);
 camera.position.copy(camStart);
@@ -69,12 +72,18 @@ systemGroup.add(centerMarker);
 
 const starA = new THREE.Mesh(
     new THREE.SphereGeometry(1, 64, 64),
-    new THREE.MeshBasicMaterial({ color : 0x38bdf8})
+    new THREE.MeshBasicMaterial({ 
+        map : starTexture,
+        color : 0xccfaff,
+    })
 );
 
 const starB = new THREE.Mesh(
     new THREE.SphereGeometry(1, 64, 64),
-    new THREE.MeshBasicMaterial({ color : 0xffaa44 })
+    new THREE.MeshBasicMaterial({ 
+        map : starTexture,
+        color : 0xff9955
+     })
 );
 
 systemGroup.add(starA, starB);
