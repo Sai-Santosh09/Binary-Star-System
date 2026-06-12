@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+        <title>Binary Star System</title>
+        <link rel = "preconnect" href = "https://fonts.googleapis.com">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+        <link
+            href = "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap"
+            rel = "stylesheet"
+            >
+        <link rel = "stylesheet" href = "./style.css" />    
+    </head>
+    <body>
+        <header id = "ui">
+            <div class = "brand">Binary Star System</div>
+            <h1>A simple binary star system simulation</h1>
+            <p>
+                If you are wondering why I made this, I randomly got binary stars in my mind... don't ask me why cuz even I don't know, it just randomly came to my mind.
+                I was thinking about Saggitarius A and B and got curious and looked up in internet and guess what they are not considered as a binary star system.
+                Then I searched more and found that it was Sirius A and B that are considered as a Binary Star System..
+                And then I found out that 60-70% of the stars in our galaxy are binary or multiple star system!!! Sirius A and B are famous just because they are the brightest visible stars for us.
+                I looked up more about these star systems and found that they follow some rules and forumlas, so I used some basic trigonometry and the center of mass formulas to simulate two stars in a binary star system.
+                I also asumed that the stars are haveing the same mass...
+            </p>
+        </header>
+
+        <div id = "scroll-area">
+            <div class = "scroll-indicator">SCROLL TO ZOOM IN OR OUT</div>
+        </div>
+
+        <script type = "importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+                }
+            }
+        </script>
+        <script type = "module" src = "./main.js"></script>
+        
+    </body>
+</html>
